@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
 body, html {
@@ -119,6 +120,18 @@ h1 {
   background-color: #6C65A8;
 }
 
+.fa-github {
+   background: black;
+   color: white;
+   font-size: 40px;
+}
+
+.fa-twitter {
+   background: black;
+   color: white;
+   font-size: 40px;
+}
+
 </style>
 </head>
 <body style="background-color:black" style="font-color:white">
@@ -142,6 +155,8 @@ h1 {
 	<h4>
 	  <a href="https://arxiv.org/abs/2005.07710" style="color:white">arXiv:2005.07710</a>
 	</h4>
+	<a class="fa fa-github" href="https://github.com/afeinstein20/" style="padding-right:20px"></a>
+	<a class="fa fa-twitter" href="https://twitter.com/afeinstein20" style="padding-left:20px"></a>
       </div>
     </div>
   </div>
@@ -151,7 +166,7 @@ h1 {
       <div class="col-lg-12">
         <h2 class="centered" style="background-color:#6C65A8"> TL;DR </h2>
 	<h3>M dwarfs have consistently high flare rates across the first 800 Myr, while hotter stars have fewer flares over time.</h3>
-	<h3>M dwarfs with T<sub>eff</sub> < 3200 K have the highest energy flares in the sample.</h3>
+	<h3>M dwarfs with T<sub>eff</sub> < 3200 K have the highest normalized energy flares in the sample.</h3>
         <h3>High flare rates seen on young stars cause exoplanet atmospheres too lose 4-7% more atmospheric mass.</h3>					   
       </div>
     </div>
@@ -290,7 +305,7 @@ h1 {
 	    There is a noticeable drop-off in flare rate and energy as the star's temperature increases.
 	    M and late K dwarfs (T<sub>eff</sub> < 4000 K) experience similar flare rates and energies across the entire age range of our sample.
             The high-energy flare tail extends out to 10<sup>35</sup>ergs and is most noticeable for t<sub>age</sub> < 50 Myr stars.
-            T<sub>eff</sub> > 6200 K corresponds to the Kraft break and thus a change in interla structure, which may be the cause of such a lack of flares.
+            T<sub>eff</sub> > 6200 K corresponds to the Kraft break and thus a change in interal structure, which may be the cause of such a lack of flares.
         </p>
       </div>
     </div>
@@ -302,7 +317,7 @@ h1 {
          <p class="centered">
 	   Here, we plot <i>Gaia</i> color against our measured rotation periods, P<sub>rot</sub>.
 	   Points are colored by the flare rate of that star.
-	   There is a noticeable decreate in flare rate at <i>Gaia</i> B<sub>p></sub> - R<sub>p></sub> = 2, 
+	   There is a noticeable decrease in flare rate at <i>Gaia</i> B<sub>p></sub> - R<sub>p></sub> = 2, 
              which corresponds to a T<sub>eff</sub> = 4000 K.
            Most stars with color B<sub>p></sub> - R<sub>p></sub> < 2 do not exhibit any flares, while the 
              cooler stars show a variety of flare rates across all rotation periods.								    
@@ -359,7 +374,7 @@ h1 {
 	    <li>When flares are present for the first 200 Myr, 4% more atmospheric mass is lost (green curve).</li>
 	    <li>When flares are present for the first 1000 Myr, 7% more atmospheric mass is lost (yellow curve).</li>
 	  </ul>
-	  Although these differences when accounting for flares does not seem large, this does suggest that flares need to
+	  Although these differences when accounting for flares do not seem large, this does suggest that flares need to
 	    be accounted for in more detail moving forward.<br></br>
 	  Flares have been shown to alter atmospheric chemistry. Here, we demonstrate they could  partially affect mass-loss rates during formation.
         </p>
@@ -386,7 +401,10 @@ h1 {
 <div class="footer">
   <a class="left"  href="http://adina.feinste.in/" style="color:white">Adina Feinstein</a>
   <p class="right">afeinstein@uchicago.edu</p>
-  <a class="centered" style="color:white" href="https://twitter.com/afeinstein20">@afeinstein20</a>
+  <div class="centered">
+    <a class="fa fa-twitter" href="https://twitter.com/afeinstein20" style="font-size:20px"></a>
+    <a style="color:white" href="https://twitter.com/afeinstein20"> @afeinstein20</a>
+  </div>
 </div>
 
 </body>
