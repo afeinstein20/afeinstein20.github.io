@@ -1,0 +1,85 @@
+body {
+   font-family: avenir;
+   color: #303030;
+   font-size:16px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 23%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f0efed;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  font-family: avenir;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #858381;
+  display: block;
+  text-align:center;
+}
+
+.responsive {
+  max-width: 70%;
+  height: auto;
+  position: relative;
+}
+
+.sidenav a:hover {
+  color: #303030;
+}
+
+h2 {text-align:center;
+    font-size:36px;}
+h4 {text-align:center;
+    font-size: 16px;}
+
+img {
+     border-radius:50%;
+    }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
