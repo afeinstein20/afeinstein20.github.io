@@ -1,0 +1,74 @@
+body {
+   font-family: avenir;
+   color: #303030;
+   font-size:16px;
+   font-color:#f0efed;
+}
+
+.sidenav {
+  height: 90%;
+  width: 55%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  margin-left:22.5%;
+  margin-top:2%;
+  background-color: #f0efed;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav p {
+	 font-size: 16px;
+	 margin-left:2%;
+	 }
+
+.sidenav a {
+  font-family: avenir;
+  text-decoration: none;
+  font-size: 16px;
+  color: #858381;
+}
+
+.responsive {
+  max-width: 70%;
+  height:auto;
+  position: relative;
+}
+
+.sidenav a:hover {
+  color: #303030;
+}
+
+h2 {text-align:center;
+    font-size:36px;}
+h4 {text-align:center;
+    font-size: 20px;}
+
+img {
+     border-radius:50%;
+    }
+
+p {margin-left:2%;
+   font-size:12px;
+  }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
