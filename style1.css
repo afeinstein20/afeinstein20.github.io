@@ -30,6 +30,7 @@ body {
 
 .responsive {
   max-width: 70%;
+  max-height: 40%;
   height:auto;
   position: relative;
 }
@@ -64,7 +65,7 @@ p {margin-left:2%;
   clear: both;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 50px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
