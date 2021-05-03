@@ -43,6 +43,8 @@ h2 {text-align:center;
     font-size:36px;}
 h4 {text-align:center;
     font-size: 18px;}
+h5 {text-align:center;
+    font-size: 16px;}
 
 img {
      border-radius:50%;
@@ -56,7 +58,7 @@ p {margin-left:2%;
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 200px; /* Should be removed. Only for demonstration */
 }
 
 .row:after {
@@ -65,7 +67,7 @@ p {margin-left:2%;
   clear: both;
 }
 
-@media screen and (max-height: 50px) {
+@media screen and (max-height: 10px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
