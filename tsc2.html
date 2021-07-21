@@ -195,11 +195,14 @@ h1 {
       <div class="col-md-6" style="text-align:center; padding-top:10px">
 	<p>
 	  V1298 Tau is a 23 Myr K0-1.5 star hosting 4 known transiting exoplanets discovered
-	  with NASA's K2 mission <a href="https://arxiv.org/abs/1910.04563" style="color:#87B8AA">(David et al. 2020)</a>.
+	  with NASA's K2 mission (<a href="https://arxiv.org/abs/1910.04563" style="color:#87B8AA">David et al. 2020</a>).
 	  The innermost planet, V1298 Tau c, is 5.59 REarth on an 8.24 day period (transits are highlighted in the
 	  original light curve to the left). 
 	  Based on the current X-Ray luminosity of the host star, this planet is predicted to evolve into
-	  the radius gap after 5 Gyr <a href="https://arxiv.org/abs/2005.10240" style="color:#87B8AA">(Poppenhaeger et al. 2020)</a>.
+	  the radius gap after 5 Gyr (<a href="https://arxiv.org/abs/2005.10240" style="color:#87B8AA">Poppenhaeger et al. 2020</a>;
+	  see orange star and predicted evolved radii below). If we can detect an extended atmosphere and measure the 
+	  atmospheric mass-loss rate, we can further constrain the final radius of V1298 Tau c and better understand the
+	  current Kepler exoplanet population (contours below).
 	</p>
       </div>
       <div class="col-md-6">
@@ -213,47 +216,49 @@ h1 {
       <div class="col-md-6">
 	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/contour.png" alt="contour">
       </div>
-      <div class="col-md-6" style="text-align:left; padding-top:45px">
+      <div class="col-md-6" style="text-align:center; padding-top:5px">
 	<p>
-	  We went after follow-up observations of the innermost planet, V1298 Tau c, with two main questions in mind:
+	  But, as you can see in the light curve, V1298 Tau is very active. There are large spot modulations, indicating the
+	  surface is heavily spotted. This is not unsurprising for young stars (<a href="https://arxiv.org/abs/1701.06703" style="color:#87B8AA">Gully-Santiago et al. 2017</a>,
+	  <a href="https://arxiv.org/abs/2005.07710" style="color:#87B8AA">Feinstein et al. 2020</a>).
+	  Stellar surface inhomogeneities have been shown to contaminate planetary transmission spectra, specifically in
+	  H-alpha (<a href="https://arxiv.org/abs/1812.06184" style="color:#87B8AA">Rackham et al. 2018</a>). So in order to detect an atmosphere
+	  in H-alpha, we would need to fully understand the inhomogeneity coverage of the host star's surface.
+	</p>
+
+	<p>
+	  Another interesting property of the system would be the spin-orbit alignment (obliquity), which is the angle between the orbital
+	  plane and the stellar spin axis. As the system is only 23 Myr, the migration mechanism for how V1298 Tau c got to be
+	  at an orbital separation of AU. While several obliquities have been measured for older systems, only a few have
+	  been conducted for systems < 100 Myr (e.g. AU Mic b <a href="https://arxiv.org/abs/2006.13675" style="color:#87B8AA">Addison et al. 2020</a>,
+				       <a href="https://arxiv.org/abs/2006.13243" style="color:#87B8AA">Hirano et al. 2020</a>,
+				       <a href="https://arxiv.org/abs/2006.13269" style="color:#87B8AA">Martioli et al. 2020</a>,
+				       <a href="https://arxiv.org/abs/2006.13609" style="color:#87B8AA">Palle et al. 2020</a>;
+				       DS Tuc Ab <a href="https://arxiv.org/abs/1912.03794" style="color:#87B8AA">Montet et al. 2020</a>,
+				       <a href="https://arxiv.org/abs/1912.04095" style="color:#87B8AA">Zhou et al. 2020</a>).
+				    
+	</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:30px">
+    <div class="row">
+      <div class="col-md-12">
+	<p>
+	  We were awarded time on Gemini-North using the GRACES spectrograph to observe a full transit of V1298 Tau c, with 
+	  two scientific questions in mind:
 	  <ul>
 	    <li>What is the spin-orbit alignment of V1298 Tau c?</li>
 	    <li>Is there an extended, photoevaporating hydrogen atmosphere? And if so, can we constrain the atmospheric
-	      mass loss rate for this young, highly irradiated planet?</li>
+              mass loss rate for this young, highly irradiated planet?</li>
 	  </ul>
 	</p>
       </div>
     </div>
   </div>
 
-  <div class="container" style="padding-top:20px">
-    <div class="row">
-      <div class="col-md-6" style="padding-top:30px">
-	<p>
-	  <!-- TEXT GOES HERE -->
-	</p>
-      </div>
-      <div class="col-md-6">
-	<!-- IMAGE GOES HERE -->
-      </div>
-    </div>
-  </div>
-  
-  <div class="container" style="padding-top:20px">
-    <div class="row">
-      <div class="col-md-6">
-	<!-- IMAGE GOES HERE -->
-      </div>
-      
-      <div class="col-md-6" style="text-align:center; margin-top:100px">
-	<p>
-	  <!-- TEXT GOES HERE -->
-	</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container" style="padding-top:40px; width=100%" id="alignment">
+  <div class="container" style="padding-top:30px; width=100%" id="alignment">
     <div class="row">
       <div class="col-lg-12">
 	<h2 class="centered" style="background-color:#2E6B92">Measuring the Spin-Orbit Alignment</h2>
@@ -274,35 +279,38 @@ h1 {
 	  that, when compared to the out-of-transit observations, create a streak in the fractional 
 	  deviation that can be used to measure the project obliquity.
 	</p>
+
+	<p>
+          We measure a projected obliquity, λ = 5° ± 15°, indicating V1298 Tau c is well-aligned.
+          The obliquity could only be measured using the Ca II Infrared triplet (IRT; right) and is not seen in
+          any other lines in our wavelength range. The deviations are only seen in the chromospherically driven
+          core of each line.
+        </p>
+	
       </div>
     </div>
   </div>
 
   <div class="container" style="padding-top:20px">
       <div class="row">
-        <div class="col-md-6" style="text-align:center">
-          <p>
-	    We measure a projected obliquity, λ = 5° ± 15°, indicating V1298 Tau c is well-aligned.
-	    The obliquity could only be measured using the Ca II Infrared triplet (IRT; right) and is not seen in
-	    any other lines in our wavelength range. The deviations are only seen in the chromospherically driven
-	    core of each line. 
-	  </p>
+        <div class="col-md-6" style="text-align:center; padding-top:20px">
 	  <p>
 	    Variations in the Ca II IRT have been seen for other close-in planets and are hypothesized 
 	    to be star-planet interactions, which is a result of
-	    the planet and star's magnetic fields interacting. The Ca II IRT is an ionized
+	    the planet and star's magnetic fields interacting
+	    (<a href="https://arxiv.org/abs/0809.4482" style="color:#87B8AA">Shkolnik et al. 2008</a>;
+	    <a href="https://arxiv.org/abs/1907.09068" style="color:#87B8AA">Cauley et al. 2019</a>).
+	    The Ca II IRT is an ionized
 	    triplet and therefore could be a tracer of the magnetic activity.
 	    However, with only 1 transit, it is hard to determine if this is actually the case.
           </p>
         </div>
 
-        <div class="col-lg-6" style="text-align:center">
-          <img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/ca_deviations_mcmc.png" alt="dt"> 
-        </div>
-
+	<div class="col-lg-6" style="text-align:center">
+	  <img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/ca_deviations_mcmc.png" alt="dt">
+	</div>
       </div>
-    </div>
-
+  </div>
 
 
   <div class="container" style="padding-top:40px" id="halpha">
@@ -352,6 +360,8 @@ h1 {
 	    captures the 4-6% photometric variability seen in the K2 light curve.
 	    This toy model (orange) exhibits a similar trend to what is seen in our 
 	    observations (gray). 
+	    We also see that the H-alpha variation seen over one night for V1298 Tau (~5%)
+	    is consistent for what is seen for other young stars.
 	    With only 1 transit, it's hard to disentangle the stellar activity from the
 	    planet.
 	    Here, we favor stellar activity as the explanation for our observations.
@@ -375,9 +385,21 @@ h1 {
   </div>
 
     <div class="col-md-12" style="padding-top:20px">
-        <p class="centered">
-	  We need more transits to say anything definitively!
-	</p>
+      <p class="centered">
+	We need more transits to say anything definitively!
+      </p>
+    </div>
+
+    <div class="container" style="padding-top:20px">
+      <div class="row">
+        <div class="col-md-6" style="text-align:center; padding-top:80px">
+	  <img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/obliquities.png" alt="obliquities">
+	</div>
+
+	<div class="col-md-6" style="text-align:center; padding-top:80px">
+          <!-- TEXT -->
+        </div>
+      </div>
     </div>
 
 
