@@ -281,11 +281,14 @@ h1 {
 
   <div class="container" style="padding-top:20px">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" style="text-align:center">
           <p>
 	    We measure a projected obliquity, λ = 5° ± 15°, indicating V1298 Tau c is well-aligned.
 	    The obliquity could only be measured using the Ca II Infrared triplet (IRT; right) and is not seen in
-	    any other lines in our wavelength range.
+	    any other lines in our wavelength range. The deviations are only seen in the chromospherically driven
+	    core of each line. 
+	  </p>
+	  <p>
 	    Variations in the Ca II IRT have been seen for other close-in planets and are hypothesized 
 	    to be star-planet interactions, which is a result of
 	    the planet and star's magnetic fields interacting. The Ca II IRT is an ionized
@@ -294,7 +297,7 @@ h1 {
           </p>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" style="text-align:center">
           <img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/ca_deviations_mcmc.png" alt="dt"> 
         </div>
 
@@ -312,14 +315,22 @@ h1 {
 
     <div class="container" style="padding-top:20px">
       <div class="row">
-	<div class="col-md-6" style="padding-top:100px">
+	<div class="col-md-6" style="padding-top:10px">
           <p class="centered">
             <img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/halpha.png" alt="halpha">
           </p>
 	</div>
 	
-	<div class="col-md-6" style="padding-top:100x">
-          <!-- IMAGE GOES HERE -->
+	<div class="col-md-6" style="text-align:center; padding-top:80px">
+	  <p>
+	    We found the H-alpha excess absorption from the beginning to the end of our observing
+	    run to smoothly decrease.
+	    There may be slight 'bumps' at transit ingress and egress (vertical dashed lines), that
+	    could be correlated with the transit, with a long term activity trend.
+	    If we fit the out-of-transit data with a line to remove the long term trend, we find
+	    a transit with a depth corresponding to 1.28 RJupiter.
+	    
+	  </p>
 	</div>
 	
       </div>
@@ -328,14 +339,29 @@ h1 {
     
     <div class="container" style="padding-top:20px">
       <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-6" style="text-align:center; padding-top:80px">
           <p>
-	    
+	    But! The trend in decreasing H-alpha absorption throughout the night can also
+	    be explained with a toy model of a starspot with a surrounding faculae region.
+	    To build this model, we used a combination of starry and spectrum. We generated
+	    spectra for a 5000K star (V1298 Tau; orange), with spot and facular regions of 4500K (red
+	    regions) and 5500K (yellow regions), respectively.
+	  </p>
+
+	  <p style="padding-top:100px">
+	    We demonstrate this with one potential configuration. The model created also 
+	    captures the 4-6% photometric variability seen in the K2 light curve.
+	    This toy model (orange) exhibits a similar trend to what is seen in our 
+	    observations (gray). 
+	    With only 1 transit, it's hard to disentangle the stellar activity from the
+	    planet.
+	    Here, we favor stellar activity as the explanation for our observations.
           </p>
 	</div>
 	
 	<div class="col-lg-6">
-	  <img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/starry_model.png" alt="spots">
+	  <img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/starry_model.png" 
+	       alt="spots" height="300" width="200">
 	</div>
 	
       </div>
@@ -349,6 +375,11 @@ h1 {
     </div>
   </div>
 
+    <div class="col-md-12" style="padding-top:20px">
+        <p class="centered">
+	  We need more transits to say anything definitively!
+	</p>
+    </div>
 
 
    <div class="container" style="padding-top:20px; width=100%; padding-bottom:80px">
