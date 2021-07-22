@@ -123,6 +123,47 @@ h1 {
    font-size: 40px;
 }
 
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 </style>
 </head>
 
@@ -142,8 +183,7 @@ h1 {
     gtag('config', 'UA-124414737-4');
   </script>
 
-
-  <nav class="navbar navbar-fixed-top">
+  <nav class="navbar  navbar-fixed-top">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li class="active"><a href="#system">V1298 Tau</a>
@@ -151,8 +191,7 @@ h1 {
       <li class="active"><a href="#halpha">H-alpha</a></li>
       <li class="active"><a href="#future">Future Work</a></li>
     </ul>
-  </nav>
-<!--<div class="bg">-->
+  </nav> 
 
   <div class="container" style="padding-top:50px">
     <div class="row">
@@ -173,12 +212,12 @@ h1 {
   <div class="container" style="padding-top:20px; width=100%">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="centered" style="background-color:#87B8AA"> TL;DR </h2>
-	<h3>We observed a full transit of V1298 Tau c with Gemini-N/GRACES (400-900 nm) in January, 2020</h3>
+        <h2 class="centered" style="background-color:#FFE8BF; color:#0B2051"> TL;DR </h2>
+	<h3>We observed a full transit of V1298 Tau c with Gemini-N/GRACES (400-900 nm; R ~ 67,500) in January, 2020.</h3>
 	<h3>We measured a projected obliquity (spin-orbit alignment) of λ = 5° ± 15°, indicating it is well-aligned.</h3>
-        <h3>We found H-alpha to be smoothly varying throughout our observations, and while we see a slight transit-like shape, which 
-	    we attribute to stellar activity.</h3>
-	<h3>We need more transmission spectra of V1298 Tau c to say anything definitively about the planet's atmosphere.</h3>
+        <h3>We found H-alpha to be smoothly varying throughout our observations, and while we see a slight transit-like shape, 
+	  we attribute the signal to stellar activity.</h3>
+	<h3>We need more transmission spectra of V1298 Tau c to say anything definitive about the planet's atmosphere.</h3>
       </div>
     </div>
   </div>
@@ -197,7 +236,7 @@ h1 {
 	<p>
 	  V1298 Tau is a 23 Myr K0-1.5 star hosting 4 known transiting exoplanets discovered
 	  with NASA's K2 mission (<a href="https://arxiv.org/abs/1910.04563" style="color:#87B8AA">David et al. 2020</a>).
-	  The innermost planet, V1298 Tau c, is 5.59 REarth on an 8.24 day period (transits are highlighted in the
+	  The innermost planet, V1298 Tau c, has a radius 5.59 x REarth on an 8.24 day period (transits are highlighted in the
 	  original light curve to the left). 
 	  Based on the current X-Ray luminosity of the host star, this planet is predicted to evolve into
 	  the radius gap after 5 Gyr (<a href="https://arxiv.org/abs/2005.10240" style="color:#87B8AA">Poppenhaeger et al. 2020</a>;
@@ -236,7 +275,8 @@ h1 {
 				       <a href="https://arxiv.org/abs/2006.13269" style="color:#87B8AA">Martioli et al. 2020</a>,
 				       <a href="https://arxiv.org/abs/2006.13609" style="color:#87B8AA">Palle et al. 2020</a>;
 				       DS Tuc Ab <a href="https://arxiv.org/abs/1912.03794" style="color:#87B8AA">Montet et al. 2020</a>,
-				       <a href="https://arxiv.org/abs/1912.04095" style="color:#87B8AA">Zhou et al. 2020</a>).
+				       <a href="https://arxiv.org/abs/1912.04095" style="color:#87B8AA">Zhou et al. 2020</a>,
+				       <a href="https://arxiv.org/abs/2103.12922" style="color:#87B8AA">Benatti et al. 2021</a>).
 				    
 	</p>
       </div>
@@ -349,8 +389,9 @@ h1 {
 	<div class="col-md-6" style="text-align:center; padding-top:80px">
           <p>
 	    But! The trend in decreasing H-alpha absorption throughout the night can also
-	    be explained with a toy model of a starspot with a surrounding faculae region.
-	    To build this model, we used a combination of starry and spectrum. We generated
+	    be explained with a toy model of a starspot with a surrounding facular region.
+	    To build this model, we used a combination of starry (<a href="https://arxiv.org/abs/1810.06559" style="color:#87B8AA">Luger et al. 2019</a>) and 
+	    spectrum (<a href="https://ui.adsabs.harvard.edu/abs/1994AJ....107..742G/abstract" style="color:#87B8AA">Gray & Corbally, 1994</a>). We generated
 	    spectra for a 5000K star (V1298 Tau; orange), with spot and facular regions of 4500K (red
 	    regions) and 5500K (yellow regions), respectively.
 	  </p>
@@ -431,8 +472,8 @@ h1 {
    <div class="container" style="padding-top:20px; width=100%; padding-bottom:80px">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="centered" style="background-color:#87B8AA">For more details, be sure to check out 
-	  <u><a href="https://arxiv.org/abs/2107.01213" style="color:#FFFFEA">our paper</a></u> on the arXiv!</h2>
+        <h2 class="centered" style="background-color:#FFE8BF; color:#0B2051">For more details, be sure to check out 
+	  <u><a href="https://arxiv.org/abs/2107.01213" style="color:#EB7843">our paper</a></u> on the arXiv!</h2>
       </div>
     </div>
    </div>
@@ -440,11 +481,11 @@ h1 {
 <!--</div>-->
 
 <div class="footer">
-  <a class="left"  href="http://adina.feinste.in/" style="color:#FFFFEA">Adina Feinstein</a>
+  <a class="left"  href="http://adina.feinste.in/" style="color:#FFE8BF">Adina Feinstein</a>
   <p class="right">afeinstein@uchicago.edu</p>
   <div class="centered">
     <a class="fa fa-twitter" href="https://twitter.com/afeinstein20" style="font-size:20px"></a>
-    <a style="color:#FFFFEA" href="https://twitter.com/afeinstein20"> @afeinstein20</a>
+    <a style="color:#FFE8BF" href="https://twitter.com/afeinstein20"> @afeinstein20</a>
   </div>
 </div>
 
