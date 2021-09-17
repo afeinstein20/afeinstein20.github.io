@@ -263,12 +263,31 @@ h1 {
 	    HR diagram (see left), with the majority of stars falling along the main sequence.
           </p>
 
-	  <p>
+	  <p style="padding-top:30px">
 	    Because we had such a large number of stars, each observed for at least 25 days,
 	    we needed a scalable approach to identifying and characterizing flares in the 
 	    light curves. For this we used the stella convolutional neural networks (CNNs;
 	    <a href="https://arxiv.org/abs/2005.07710" style="color:#8e76bd">Feinstein et al. 2020</a>).
+	    This technique assigns a probability to each flare (0 = not a flare; 1 = flare), allowing us
+	    to statistically validate each event. Due to the small training set of the original CNNs, we 
+	    additionally apply 4 false positive
+            filters to the data (as prescribed by Gunther et al. in prep):
+
+	    <ol style="text-align:left; color:#ffe5d1">
+	      <li>Signal-to-Noise filter: requires flares to be 3 x the root-mean-square of the data.</li>
+	      <li>Outliers: removes flares with durations < 4 minutes (likely noise).</li>
+	      <li>Eclipsing binaries: removes flares correspond to ingresses/egresses of eclipses, as these
+		can be sharp features that look flare-like.</li>
+	      <li>Variability/Rotation: removes flares that occur at the peak of periodic modulation in the light
+		curve.</li>
+	    </ol>
 	  </p>
+
+	  <p style="padding-top:30px">
+	    This left us with 958,659 flares originating from all sample of stars. We then calculated the flare
+	    rate (flares / day) of each star. We weighted each flare by the probability that it is a flare.
+	  </p>
+
         </div>
 
 	<div class="col-lg-6" style="text-align:center">
