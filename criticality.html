@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+var color="#3E0E0D"
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.banner {
+  height: 100px;
+  width:100%;
+  background-color: #110c1c;
+}
+
+img {
+   width:100%;
+   height:auto;
+}
+
+a {
+  color: #ffe5d1;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #110c1c;
+   color: #34234D;
+   text-align: center;
+}
+
+.left {
+  text-align:left;
+  float:left;
+  margin-left:35px;
+}
+.right {
+   float:right;
+   text-align:right;
+   margin-right:35px;
+}
+.centered {
+   text-align:center;
+   margin-left:16.5px;
+}
+
+body {
+   font-family: avenir;
+   color: #ffe5d1;
+   font-size:16px;
+   background-color:#110c1c;
+}
+
+h1 {
+  color:#ffe5d1;
+  font-size:38px;
+  margin-top:20px;
+}
+
+.container {
+  color:#f5c96c;
+}
+
+.btn {
+  background-color: #110c1c;
+  color: #34234D;
+  border: none;
+  font-size: 16px;
+  border-radius:8px;
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 1150px;
+  margin-top: 330px; 
+}
+
+.btn:hover {background: #110c1c;
+                 color:#110c1c;
+}
+
+.default {color: #34234D;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #110c1c;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#110c1c;
+}
+
+.navbar-nav > .active > a {
+  color: #FFE8BF;
+  background-color: #110c1c;
+}
+
+.navbar-nav > a:hover {
+  color: #0B2051;
+  background-color: #110c1c;
+}
+
+.fa-github {
+   background: #110c1c;
+   color: #FFE8BF;
+   font-size: 40px;
+}
+
+.fa-twitter {
+   background: #110c1c;
+   color: #FFE8BF;
+   font-size: 40px;
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+</style>
+</head>
+
+<!-- CITATION STYLE <a href="http://www.exoplanetes.umontreal.ca/banyan/" style="color:#6C65A8">BANYAN-SIGMA</a> -->
+
+<title>Adina Feinstein</title>
+
+<body style="background-color:#110c1c" style="font-color:#FFE8BF">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124414737-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-124414737-4');
+  </script>
+
+  <nav class="navbar  navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="research.html">Home</a></li>
+      <li class="active"><a href="#soc">Self-Organized Criticality</a>
+      <li class="active"><a href="#tess">TESS Data</a>
+      <li class="active"><a href="#connect">Stellar Coronae</a></li>
+    </ul>
+  </nav> 
+
+  <div class="container" style="padding-top:50px">
+    <div class="row">
+      <h1 class="centered" style="color:#ffe5d1">Testing Self-Organized Criticality Across the Main Sequence using Stellar Flares from TESS</h1>
+      <h4 class="centered" style="color:#d98147"><a href="http://adina.feinste.in/" style="color:#8e76bd; font-size:18pt">Adina Feinstein</a>, 
+	Darryl Seligman, Maximilian Gunther, & Fred Adams
+      </h4>
+      <div class="col-lg-12" style="text-align:center">
+	<h4>
+	  <a href="https://arxiv.org/abs/2109.07011" style="color:#ffe5d1">arXiv:2109.07011</a>
+	</h4>
+	<a class="fa fa-github" href="https://github.com/afeinstein20/flares_soc" style="padding-right:20px"></a>
+	<a class="fa fa-twitter" href="https://twitter.com/afeinstein20" style="padding-left:20px"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:20px; width=100%">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#d98147; color:#110c1c"> TL;DR </h2>
+	<h3>      </h3>
+      </div>
+    </div>
+  </div>
+
+   <div class="container" style="padding-top:20px; width=100%" id="soc">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#8e76bd">What is Self-Organized Criticality?</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:20px">
+    <div class="row">
+      <div class="col-md-6" style="text-align:center; padding-top:10px">
+	<p>
+<!-- SOC SUMMARY HERE-->
+	</p>
+      </div>
+      <div class="col-md-6">
+	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/lc.png" alt="lightcurve">
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:20px">
+    <div class="row">
+      <div class="col-md-6">
+	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/contour.png" alt="contour">
+      </div>
+      <div class="col-md-6" style="text-align:center; padding-top:5px">
+	<p>
+<!-- SOC PARAGRAPH 2 -->				    
+	</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="padding-top:30px; width=100%" id="tess">
+    <div class="row">
+      <div class="col-lg-12">
+	<h2 class="centered" style="background-color:#8e76bd">Flares from TESS</h2>
+    </div>
+  </div>
+
+
+  <div class="container" style="padding-top:20px">
+      <div class="row">
+        <div class="col-md-6" style="text-align:center; padding-top:20px">
+	  <p>
+<!-- FLARES PARAGRAPH -->
+          </p>
+        </div>
+
+	<div class="col-lg-6" style="text-align:center">
+	  <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/criticality/dark-bkg/hr_dark.png" alt="cmd">
+	</div>
+      </div>
+  </div>
+
+
+  <div class="container" style="padding-top:40px" id="connect">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#8e76bd">Inferring Properties about Stellar Coronae</h2>
+    </div>
+  </div>
+
+     <div class="container" style="padding-top:20px">
+      <div class="row">
+	
+        <div class="col-md-12" style="padding-top:10px">
+          <p class="centered" style="width:95%">
+            <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/criticality/dark-bkg/histograms_dark.png" alt="histograms">
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:20px">
+      <div class="row">
+	<div class="col-md-6" style="padding-top:10px">
+          <p class="centered">
+            <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/criticality/dark-bkg/comparison_dark.png" alt="compare">
+          </p>
+	</div>
+	
+	<div class="col-md-6" style="text-align:center; padding-top:80px">
+	  <p>
+<!-- CONNECTION PARAGRAPH -->
+	  </p>
+	</div>
+	
+      </div>
+    </div>
+    
+
+   <div class="container" style="padding-top:20px; width=100%; padding-bottom:80px">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#d98147; color:#110c1c">For more details, be sure to check out 
+	  <u><a href="https://arxiv.org/abs/2109.07011" style="color:#ffe5d1">our paper</a></u> on the arXiv!</h2>
+      </div>
+    </div>
+   </div>
+  
+<!--</div>-->
+
+<div class="footer">
+  <a class="left"  href="http://adina.feinste.in/" style="color:#ffe5d1">Adina Feinstein</a>
+  <p class="right" style="color:#ffe5d1">afeinstein@uchicago.edu</p>
+  <div class="centered">
+    <a class="fa fa-twitter" href="https://twitter.com/afeinstein20" style="font-size:20px"></a>
+    <a style="color:#ffe5d1" href="https://twitter.com/afeinstein20"> @afeinstein20</a>
+  </div>
+</div>
+
+</body>
+</html>
+
