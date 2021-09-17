@@ -67,10 +67,14 @@ body {
    background-color:#110c1c;
 }
 
-h1 {
+.h1 {
   color:#ffe5d1;
   font-size:38px;
   margin-top:20px;
+}
+
+.h3 {
+  color:#ffe5d1;
 }
 
 .container {
@@ -113,19 +117,19 @@ h1 {
 }
 
 .navbar-nav > a:hover {
-  color: #0B2051;
+  color: #ffe5d1;
   background-color: #110c1c;
 }
 
 .fa-github {
    background: #110c1c;
-   color: #FFE8BF;
+   color: #ffe5d1;
    font-size: 40px;
 }
 
 .fa-twitter {
    background: #110c1c;
-   color: #FFE8BF;
+   color: #ffe5d1;
    font-size: 40px;
 }
 
@@ -218,7 +222,7 @@ h1 {
     <div class="row">
       <div class="col-lg-12">
         <h2 class="centered" style="background-color:#d98147; color:#110c1c"> TL;DR </h2>
-	<h3>      </h3>
+	<h3 style="color:#ffe5d1">We use ~10<sup>6</sup> stellar flares to provide evidence that all stellar coronae may be in self-organized critical states.</h3>
       </div>
     </div>
   </div>
@@ -226,7 +230,7 @@ h1 {
    <div class="container" style="padding-top:20px; width=100%" id="soc">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="centered" style="background-color:#8e76bd">What is Self-Organized Criticality?</h2>
+        <h2 class="centered" style="background-color:#8e76bd; color:#ffe5d1">What is Self-Organized Criticality?</h2>
       </div>
     </div>
   </div>
@@ -247,7 +251,7 @@ h1 {
   <div class="container" style="padding-top:30px; width=100%" id="tess">
     <div class="row">
       <div class="col-lg-12">
-	<h2 class="centered" style="background-color:#8e76bd">Flares from TESS</h2>
+	<h2 class="centered" style="background-color:#8e76bd;color:#ffe5d1">Stellar Flares from TESS</h2>
     </div>
   </div>
 
@@ -285,7 +289,7 @@ h1 {
 
 	  <p style="padding-top:30px">
 	    This left us with 958,659 flares originating from all sample of stars. We then calculated the flare
-	    rate (flares / day) of each star. We weighted each flare by the probability that it is a flare.
+	    rate (flares / day) of each star. We weighed each flare by the probability that it is a flare.
 	  </p>
 
         </div>
@@ -300,7 +304,7 @@ h1 {
   <div class="container" style="padding-top:40px" id="connect">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="centered" style="background-color:#8e76bd">Inferring Properties about Stellar Coronae</h2>
+        <h2 class="centered" style="background-color:#8e76bd;color:#ffe5d1">Inferring Properties about Stellar Coronae</h2>
     </div>
   </div>
 
@@ -321,9 +325,24 @@ h1 {
 
 	 <div class="col-md-12" style="text-align:center; padding-top:10px">
            <p>
-	    We break our sample up into 6 bins: 5 based on the stellar mass on the main sequence (purple through green)
-	    and 1 for stars on the red giant branch (yellow).
+	     We present our measured flare frequency distributions (FFDs) and slopes above. 
+	     We broke our sample up into
+	     6 bins: 5 based on stellar mass on the main sequence (purple through green) and 1 bin
+	     for stars on the red giant branch (yellow). The histograms represent all flares with
+	     probabilities >= 0.9, to provide a high-confident set of flares.
+	     We chose to bin the flares by amplitude (%) 
+	     rather than flare energy to remove additional errors resulting from estimating stellar
+	     luminosities. We estimated the upper and lower errors on the FFD as flares with probabilities
+	     >= 0.99 and flares >= 0.5.
           </p>
+
+	  <p><b>
+	    We find the measured slopes are consistent with models of flaring activity as
+	    self-organized critical systems 
+	    (<a href="https://ui.adsabs.harvard.edu/abs/1991ApJ...380L..89L/abstract" style="color:#8e76bd">Lu & Hamilton, 1991</a>)
+	    and with that measured for the Sun
+	    (<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.96.051102" style="color:#8e76bd">de Arcangelis et al. 2006</a>).
+	  </b></p>
          </div>
        </div>
      </div>
@@ -336,9 +355,13 @@ h1 {
           </p>
 	</div>
 	
-	<div class="col-md-6" style="text-align:center; padding-top:80px">
+	<div class="col-md-6" style="text-align:center; padding-top:20px">
 	  <p>
-<!-- CONNECTION PARAGRAPH -->
+	    Additionally, we compare our measured FFD slopes to that found in the literature. Previous
+	    studies used an order of magnitude fewer flare events and reported steeper slopes than
+	    the ones measured here. The variation arises based on sample size/selection and the
+	    cadence of the analyzed flares. This variation may also arise from the difference in
+	    total observing times.
 	  </p>
 	</div>
 	
