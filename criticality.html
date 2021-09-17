@@ -31,6 +31,10 @@ a {
   color: #ffe5d1;
 }
 
+p {
+  color: #ffe5d1;
+}
+
 .footer {
    position: fixed;
    left: 0;
@@ -173,7 +177,7 @@ h1 {
 
 <title>Adina Feinstein</title>
 
-<body style="background-color:#110c1c" style="font-color:#FFE8BF">
+<body style="background-color:#110c1c" style="font-color:#ffe5d1">
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124414737-4"></script>
@@ -235,24 +239,10 @@ h1 {
 	</p>
       </div>
       <div class="col-md-6">
-	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/lc.png" alt="lightcurve">
+	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/figures/sandpile.gif" alt="sandpile">
       </div>
     </div>
   </div>
-
-  <div class="container" style="padding-top:20px">
-    <div class="row">
-      <div class="col-md-6">
-	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/tsc2/contour.png" alt="contour">
-      </div>
-      <div class="col-md-6" style="text-align:center; padding-top:5px">
-	<p>
-<!-- SOC PARAGRAPH 2 -->				    
-	</p>
-      </div>
-    </div>
-  </div>
-
 
   <div class="container" style="padding-top:30px; width=100%" id="tess">
     <div class="row">
@@ -266,8 +256,19 @@ h1 {
       <div class="row">
         <div class="col-md-6" style="text-align:center; padding-top:20px">
 	  <p>
-<!-- FLARES PARAGRAPH -->
+	    To test if all stellar coronae are in self-organized critical states, we need a 
+	    large sample of stellar flares across a variety of spectral types. For this, we
+	    used all of the stars observed at high cadence by the Transiting Exoplanet Survey 
+	    Satellite (TESS). This sample has 161,836 stars that are located all across the
+	    HR diagram (see left), with the majority of stars falling along the main sequence.
           </p>
+
+	  <p>
+	    Because we had such a large number of stars, each observed for at least 25 days,
+	    we needed a scalable approach to identifying and characterizing flares in the 
+	    light curves. For this we used the stella convolutional neural networks (CNNs;
+	    <a href="https://arxiv.org/abs/2005.07710" style="color:#8e76bd">Feinstein et al. 2020</a>).
+	  </p>
         </div>
 
 	<div class="col-lg-6" style="text-align:center">
@@ -292,12 +293,23 @@ h1 {
             <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/criticality/dark-bkg/histograms_dark.png" alt="histograms">
           </p>
         </div>
-
-
       </div>
     </div>
 
-    <div class="container" style="padding-top:20px">
+
+     <div clas="container" style="padding-top:10px">
+       <div class="row">
+
+	 <div class="col-md-12" style="text-align:center; padding-top:10px">
+           <p>
+	    We break our sample up into 6 bins: 5 based on the stellar mass on the main sequence (purple through green)
+	    and 1 for stars on the red giant branch (yellow).
+          </p>
+         </div>
+       </div>
+     </div>
+
+    <div class="container" style="padding-top:10px">
       <div class="row">
 	<div class="col-md-6" style="padding-top:10px">
           <p class="centered">
