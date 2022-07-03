@@ -230,7 +230,16 @@ body {
     <div class="row">
       <div class="col-lg-12">
         <h2 class="centered" style="background-color:#73BABA; color:#232323"> TL;DR </h2>
-	<h3 style="color:#FFDEB1">We observed 13 FUV flares on AU Mic.</h3>
+	         <h3 style="color:#FFDEB1">We observed AU Mic for 5 hours with
+             HST/COS and detected 13 FUV flares.</h3>
+           <h3 style="color:#FFDEB1">We find strong continuum increases at λ ≤ 1120 Å
+             during flares, which could be attributed to thermal bremsstrahlung
+             processes.</h3>
+           <h3 style="color:#FFDEB1">We find no evidence of coronal dimming after
+             or affiliated proton beams in our observations.</h3>
+           <h3 style="color:#FFDEB1">We evaluate the instantaneous atmospheric
+             mass-loss for AU Mic b and find evidence that super-flares could
+             result in detectable signatures of mass-loss.</h3>
       </div>
     </div>
   </div>
@@ -335,7 +344,8 @@ body {
             <a href="https://ui.adsabs.harvard.edu/abs/1992ApJ...397L..95W/abstract" target="_blank">Woodgate et al. 1992</a>)
             We identified 13 flares over our
             observations, yielding an <b>FUV flare rate of 2.4 flares/hour</b>!
-            The flares in our sample have measured energies from 1x10<sup>30</sup> to 2x10<sup>31</sup> erg
+            The flares in our sample have measured energies from 1x10<sup>30</sup>
+            to 2x10<sup>31</sup> erg
             and equivalent durations ranging from 2 to 690 seconds.
 
 
@@ -362,13 +372,28 @@ body {
 
        <div class="col-md-6" style="padding-top:10px">
          <p class="centered" style="width:95%">
-           <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/continuum.jpeg" alt="continuum">
+           <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/continuum.png" alt="continuum">
          </p>
        </div>
 
        <div class="col-md-6" style="padding-top:10px">
          <p class="centered" style="width:95%">
-           <u><b>Thermal Bremsstrahlung?</b></u>
+           <u><b>Thermal Bremsstrahlung</b></u><br>
+           Thermal bremsstrahlung is a principal emission mechanism for the
+           Soft X-ray emission observed in solar flares
+           (<a href="https://ui.adsabs.harvard.edu/abs/1996AdSpR..17d...9S/abstract" target="_blank">Shibata 1996</a>;
+           <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...854..122W/abstract" target="_blank">Warren et al. 2018</a>;
+           <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...881..161M/abstract" target="_blank">McTiernan et al. 2019</a>).
+           We fit for both the temperature and
+          electron number density in a thermal bremsstrahlung
+          profile at λ ≤ 1120 Å. We found temperatures of
+          9.1 ≤ log<sub>10</sub>(T) ≤ 11.2 best-fit the continua increases
+          seen during Flares B, D, J, K, and M (<b>see left</b>). However, we note these fits converge only for
+          electron number densities of ∼ 1022 cm<sup>−3</sup>, which is not
+          representative of the stellar chromosphere. Therefore,
+          thermal bremsstrahlung cannot be solely responsible for
+          this feature, and it is unclear what other mechanisms
+          may be contributing to this FUV excess.
          </p>
        </div>
      </div>
@@ -381,8 +406,22 @@ body {
        <div class="col-md-6" style="padding-top:10px">
          <p class="centered" style="width:95%">
            <u><b>Coronal Mass Ejections</b></u><br>
+           One promising method to detect coronal mass ejections (CMEs) in
+           time-series photometry is through the process typically referred to
+           as “coronal dimming”
+           (<a href="https://ui.adsabs.harvard.edu/abs/2016SoPh..291.1761H/abstract" target="_blank">Harra et al. 2016</a>;
+           <a href="https://ui.adsabs.harvard.edu/abs/2021NatAs...5..697V/abstract" target="_blank">Veronig et al. 2021</a>)
+           which is caused by the depletion of plasma
+           in the corona of a star during a CME
+           (<a href="https://ui.adsabs.harvard.edu/abs/1996ApJ...470..629H/abstract" target="_blank">Hudson et al. 1996</a>;
+           <a href="https://ui.adsabs.harvard.edu/abs/1997ApJ...491L..55S/abstract" target="_blank">Sterling & Hudson 1997</a>).
+           Recently,
+           <a href="https://ui.adsabs.harvard.edu/abs/2021NatAs...5..697V/abstract" target="_blank">Veronig et al. (2021)</a>
+           reported three statistically significant (σ ≥ 4.4) dimming events
+           in X-ray observations of AU Mic with depths ranging from 12 − 24%.
 
            <br>
+
            We searched for dimming events in our light
           curves created from the Fe XII, Fe XIX, and Fe XXI
           emission lines. These lines form at 10<sup>6.2</sup> K,
@@ -398,8 +437,18 @@ body {
        <div class="col-md-6" style="padding-top:10px">
          <p class="centered" style="width:95%">
           <u><b>Orrall-Zirker Effect</b></u><br>
+          Low-energy (< 1 MeV)
+          protons are challenging to detect because of the lack of
+          affiliated X-ray or microwave radiation. However, it is
+          possible that these protons could interact with and excite chromospheric hydrogen atoms. This process would
+          subsequently result in spontaneous decay and the release
+          of a high-energy photon. The high-energy photons are
+          potentially detectable via flux excess in the red wing
+          of Ly-α
+          (<a href="https://ui.adsabs.harvard.edu/abs/1976ApJ...208..618O/abstract" target="_blank">Orrall & Zirker 1976</a>).
 
           <br>
+
           To determine if there was an affiliated proton beam
           in our observations, we searched for enhancement in the
           blue and red wings of Ly-α, respectively. We created 1 second light
@@ -425,6 +474,23 @@ body {
       </div>
     </div>
 
+    <div class="col-md-12" style="text-align:center; padding-top:10px">
+      <p>
+        What do these flares and newly measure FUV luminosity mean for AU Mic
+        b?  We evaluate photoevaporation-driven mass-loss with and without
+        flares (
+        <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...847...29O/abstract" target="_blank">Owen & Wu, 2017</a>;
+        <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5287O/abstract" target="_blank">Owen & Campos Estrada, 2020</a>).
+        We adopt a quiescent luminosity L<sub>HE</sub> = 2.71 x 10<sup>29</sup> erg s<sup>−1</sup>,
+        which is calculated from our differential emission measurement (DEM) over
+        1 ≤ λ[Å] ≤ 1100, for which the DEM is reliable. We simulate the results
+        for AU Mic b <b>only</b>, since AU Mic c does not satisfy the Jeans
+        criteria. We evaluate the calculation over three scenarios: no flares (left),
+        flares persistent for 200 Myr (middle), and flares persistent for 1 Gyr (right).
+        The boxes are colored by the average mass-loss rate.
+      </p>
+    </div>
+
        <div class="container" style="padding-top:20px">
         <div class="row">
 
@@ -436,21 +502,41 @@ body {
         </div>
       </div>
 
-    	<div class="col-md-12" style="text-align:center; padding-top:90px">
+      <div class="col-md-4" style="text-align:center; padding-top:10px">
     	  <p>
-          What do these flares and newly measure FUV luminosity mean for AU Mic
-          b?  We evaluate photoevaporation-driven mass-loss with and without
-          flares (
-          <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...847...29O/abstract" target="_blank">Owen & Wu, 2017</a>;
-          <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5287O/abstract" target="_blank">Owen & Campos Estrada, 2020</a>).
-          We find super
-          flares (L > 10<sup>34</sup> erg/s) can increase instantaneous
-          mass-loss by 6 orders of magnitude.  This could lead to future variable
+          <u><b>No Flares</b></u><br>
+          We find that the median mass-loss rate for
+          AU Mic b across all assumed core masses ranges from
+          1.6 to 2.5 x 10<sup>8</sup> g s<sup>−1</sup>. These
+          calculations are consistent with the upper limit set by
+          <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...899L..13H/abstract" target="_blank">Hirano et al. (2020)</a>
+          using the metastable infrared He I
+          triplet with NIRSPEC/Keck-II.
+    	  </p>
+    	</div>
+
+      <div class="col-md-4" style="text-align:center; padding-top:10px">
+    	  <p>
+          <u><b>Flares for 200 Myr</b></u><br>
+          When we include flares
+          for the first 200 Myr, we find no significant change in the
+          time-averaged mass loss rate, with minimal increases of
+          up to 1.5x the no-flare baseline.
+    	  </p>
+    	</div>
+
+    	<div class="col-md-4" style="text-align:center; padding-top:10px">
+    	  <p>
+          <u><b>Flares for 1 Gyr</b></u><br>
+          We find the time-averaged mass loss rate increases by 3x the no-flare
+          baseline. We find super
+          flares (L > 10<sup>34</sup> erg s<sup>-1</sup>) can increase instantaneous
+          mass-loss by 6 orders of magnitude, up to 10<sup>14</sup> g s<sup>−1</sup>.
+          This could lead to future variable
           transit depths/shapes.
     	  </p>
     	</div>
 
-    </div>
   </div>
 
 
