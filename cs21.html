@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="figures/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.banner {
+  height: 100px;
+  width:100%;
+  background-color: #232323;
+}
+
+img {
+   width:100%;
+   height:auto;
+}
+
+a {
+  color: #B10F47;
+}
+
+a:hover {
+  color:#73BABA;
+}
+
+p {
+  color: #FFDEB1;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #232323;
+   color: #34234D;
+   text-align: center;
+}
+
+.left {
+  text-align:left;
+  float:left;
+  margin-left:35px;
+}
+.right {
+   float:right;
+   text-align:right;
+   margin-right:35px;
+}
+.centered {
+   text-align:center;
+   margin-left:16.5px;
+}
+
+body {
+   font-family: avenir;
+   color: #FFDEB1;
+   font-size:16px;
+   background-color:#232323;
+}
+
+.h1 {
+  color:#FFDEB1;
+  font-size:38px;
+  margin-top:20px;
+}
+
+.h3 {
+  color:#FFDEB1;
+}
+
+.container {
+  color:#232323;
+}
+
+.btn {
+  background-color: #232323;
+  color: #34234D;
+  border: none;
+  font-size: 16px;
+  border-radius:8px;
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 1150px;
+  margin-top: 330px;
+}
+
+.btn:hover {background: #232323;
+                 color:#232323;
+}
+
+.default {color: #34234D;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #232323;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#232323;
+}
+
+.navbar-nav > .active > a {
+  color: #FFE8BF;
+  background-color: #232323;
+}
+
+.navbar-nav > a:hover {
+  color: #FFDEB1;
+  background-color: #232323;
+}
+
+.fa-github {
+   background: #232323;
+   color: #FFDEB1;
+   font-size: 40px;
+}
+
+.fa-twitter {
+   background: #232323;
+   color: #FFDEB1;
+   font-size: 40px;
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+</style>
+</head>
+
+<!-- CITATION STYLE <a href="http://www.exoplanetes.umontreal.ca/banyan/" style="color:#6C65A8">BANYAN-SIGMA</a> -->
+
+<title>Adina Feinstein</title>
+
+<body style="background-color:#232323" style="font-color:#FFDEB1">
+
+
+
+  <nav class="navbar  navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="active"><a href="#aumic">AU Mic</a>
+      <li class="active"><a href="#fuvobs">FUV Observations</a>
+      <li class="active"><a href="#planets">Planetary Implications</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" style="padding-top:50px">
+    <div class="row">
+      <h1 class="centered" style="color:#FFDEB1">AU Microscopii in the FUV:
+        Observations in Quiescence, During Flares, and Implications for
+        AU Mic b and c
+      </h1>
+      <h4 class="centered" style="color:#FFC77B"><a href="index.html"
+        style="color:#73BABA; font-size:18pt">Adina Feinstein</a>,
+	       Kevin France, Allison Youngblood, Girish Duvvuri, DJ Teal, Wilson
+         Cauley, Darryl Seligman, Eric Gaidos, Eliza Kempton, Jacob Bean,
+         Hannah Diamond-Lowe, Elisabeth Newton, Sivan Ginzburg, Peter
+         Plavchan, Peter Gao, & Hilke Schlichting
+      </h4>
+      <div class="col-lg-12" style="text-align:center">
+	<h4>
+	  <a href="https://arxiv.org/abs/2205.09606" target="_blank"
+    style="color:#FFDEB1">arXiv:2205.09606</a>
+	</h4>
+	<a class="fa fa-github" target="_blank"
+    href="https://github.com/afeinstein20/cos_flares"
+    style="padding-right:20px"></a>
+	<a class="fa fa-twitter" target="_blank"
+      href="https://twitter.com/afeinstein20"
+      style="padding-left:20px"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:20px; width=100%">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#73BABA; color:#232323"> TL;DR </h2>
+	<h3 style="color:#FFDEB1">We observed 13 FUV flares on AU Mic.</h3>
+      </div>
+    </div>
+  </div>
+
+   <div class="container" style="padding-top:20px; width=100%" id="aumic">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#B10F47;
+        color:#FFDEB1">Who is AU Mic?</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:20px">
+    <div class="row">
+      <div class="col-md-6" style="text-align:center; padding-top:0px">
+      	<p>
+          AU Mic is a close (9.72pc)
+          22 Myr (<a href="https://ui.adsabs.harvard.edu/abs/2014MNRAS.445.2169M/abstract" target="_blank">Mamajek & Bell, 2014</a>)
+          M dwarf with 2 transiting exoplanets
+          (<a href="https://ui.adsabs.harvard.edu/abs/2020Natur.582..497P/abstract" target="_blank">Plavchan et al. 2020</a>;
+          <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...649A.177M/abstract" target="_blank">Martioli et al. 2021</a>;
+          <a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..147G/abstract" target="_blank">Gilbert et al. 2022</a>).
+          Given its age, this system is a crucial benchmark for understanding the role
+          of stellar activity in shaping exoplanet atmospheres.<br>
+          Understanding the contribution of stellar flares to atmospheric removal
+          has only just begun.
+          <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...844L..13G/abstract" target="_blank">Garcia-Sage et al. (2017)</a>
+          modeled EUV-driven proton and O<sup>+</sup> escape from an Earth-like
+          planet around Proxima Centauri. They speculated that very energetic flares
+          could increase the ionization fraction at low-altitudes, indirectly
+          enhancing atmospheric escape.<br>
+          <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220310127N/abstract" target="_blank">Neves Ribeiro do Amaral et al. (2022)</a>
+          accounted for the X-ray and UV (XUV) contribution of flare flux in
+          atmospheric escape from Earth-like planets around M dwarfs. The XUV flux
+          from flares produced surface water loss for planets with mass M<sub>p</sub>
+          = 5 M<sub>Earth</sub> in their simulations. However, the effects of
+          radiation from frequent highenergy flares on short period, young planets
+          has not been fully investigated.
+      	</p>
+      </div>
+      <div class="col-md-6" style="padding-top:10px">
+        <p class="centered" style="width:95%">
+          <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/contour_with_targets.png" alt="histograms">
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container" style="padding-top:30px; width=100%" id="fuvobs">
+    <div class="row">
+      <div class="col-lg-12">
+	       <h2 class="centered" style="background-color:#B10F47;color:#FFDEB1">
+           The FUV Time-Series and Spectra of Flares and in Quiescence</h2>
+      </div>
+    </div>
+
+  <div class="container" style="padding-top:20px">
+      <div class="row">
+
+        <div class="col-lg-6" style="text-align:center">
+      	  <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/spectrum.png"
+          alt="lc">
+      	</div>
+
+        <div class="col-md-6" style="text-align:center; padding-top:20px">
+      	  <p>
+            We observed AU Mic over 2 Hubble visits using the Cosmic Origins
+            Spectrograph (COS) during transits of AU Mic b (PI Cauley) with the
+            G130M grating from 1060-1360 Å.  We masked Ly-ɑ to not damage the
+            detector. We present the <b>average quiescent spectrum to the left</b>!
+            The high SNR and high activity level of AU Mic produces a
+            spectrum rich with emission features, which
+            allow us to create a nearly complete list of present
+            emission features, with respect to the
+            databases and published FUV line lists. In total, we identified
+            <b>176 emision features</b>. We present a table of measured velocity
+            shifts, fluxes, and FWHM for both quiescent and in-flares lines,
+            which can be downloaded
+            <a href="https://github.com/afeinstein20/cos_flares/blob/paper-version/data/ion_list.txt" target="_blank">here</a>.
+
+
+          </p>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="container" style="padding-top:20px">
+      <div class="row">
+        <div class="col-md-6" style="text-align:center; padding-top:20px">
+      	  <p>
+            We created 30-second light curves using the COS time-tag feature to
+            study both the transit & flares. Due to the small data set, we
+            identified flares by-eye in each orbit. To identify flares, we
+            searched two separate light curves: the C III emission line at
+            1175.59 Å and the Si III emission line at 1294.55 Å (see Appendix
+            Figure A1 in <a href="https://arxiv.org/abs/2205.09606" target="_blank">our paper</a>).
+            This method is consistent with previous studies (e.g.
+            <a href="https://ui.adsabs.harvard.edu/abs/1992ApJ...397L..95W/abstract" target="_blank">Woodgate et al. 1992</a>)
+            We identified 13 flares over our
+            observations, yielding an <b>FUV flare rate of 2.4 flares/hour</b>!
+            The flares in our sample have measured energies from 1x10<sup>30</sup> to 2x10<sup>31</sup> erg
+            and equivalent durations ranging from 2 to 690 seconds.
+
+
+          </p>
+        </div>
+
+	<div class="col-lg-6" style="text-align:center">
+	  <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/flux.png"
+    alt="lc">
+	</div>
+      </div>
+  </div>
+
+  <div class="container" style="padding-top:30px; width=100%" id="fuvobs">
+    <div class="row">
+      <div class="col-lg-12">
+         <h2 class="centered" style="background-color:#B10F47;color:#FFDEB1">
+           Affiliated Physical Processes</h2>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:20px">
+     <div class="row">
+
+       <div class="col-md-6" style="padding-top:10px">
+         <p class="centered" style="width:95%">
+           <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/continuum.jpeg" alt="continuum">
+         </p>
+       </div>
+
+       <div class="col-md-6" style="padding-top:10px">
+         <p class="centered" style="width:95%">
+           <u><b>Thermal Bremsstrahlung?</b></u>
+         </p>
+       </div>
+     </div>
+   </div>
+
+
+    <div class="container" style="padding-top:20px">
+     <div class="row">
+
+       <div class="col-md-6" style="padding-top:10px">
+         <p class="centered" style="width:95%">
+           <u><b>Coronal Mass Ejections</b></u><br>
+
+           <br>
+           We searched for dimming events in our light
+          curves created from the Fe XII, Fe XIX, and Fe XXI
+          emission lines. These lines form at 10<sup>6.2</sup> K,
+          10<sup>7.0</sup> K, and 10<sup>7.1</sup> K, and trace the quiet
+          and active corona, respectively.  We searched for post-flare dimming
+          during Flare D in these Fe lines. We find that the pre- and
+          post-flare flux for all iron lines searched in this paper are
+          within a 1σ agreement with each other, indicating no evidence of
+          coronal dimming associated with Flare D.
+         </p>
+       </div>
+
+       <div class="col-md-6" style="padding-top:10px">
+         <p class="centered" style="width:95%">
+          <u><b>Orrall-Zirker Effect</b></u><br>
+
+          <br>
+          To determine if there was an affiliated proton beam
+          in our observations, we searched for enhancement in the
+          blue and red wings of Ly-α, respectively. We created 1 second light
+          curves from the third orbit of Visit 1 to search for an affiliated
+          proton beam around both discrete peaks of Flare B from
+          1202 − 1204 Å and 1222 − 1227 Å. We found the overall detection of
+          enhancement was non-significant. Therefore, we conclude that there
+          is no evidence for the Orrall-Zirker Effect.
+         </p>
+       </div>
+
+     </div>
+   </div>
+
+  </div>
+
+
+  <div class="container" style="padding-top:40px" id="planets">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#B10F47;
+        color:#FFDEB1">Implications for AU Mic b & c</h2>
+      </div>
+    </div>
+
+       <div class="container" style="padding-top:20px">
+        <div class="row">
+
+          <div class="col-md-12" style="padding-top:10px">
+            <p class="centered" style="width:95%">
+              <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/mass_loss.png" alt="mass-loss">
+            </p>
+          </div>
+        </div>
+      </div>
+
+    	<div class="col-md-12" style="text-align:center; padding-top:90px">
+    	  <p>
+          What do these flares and newly measure FUV luminosity mean for AU Mic
+          b?  We evaluate photoevaporation-driven mass-loss with and without
+          flares (
+          <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...847...29O/abstract" target="_blank">Owen & Wu, 2017</a>;
+          <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5287O/abstract" target="_blank">Owen & Campos Estrada, 2020</a>).
+          We find super
+          flares (L > 10<sup>34</sup> erg/s) can increase instantaneous
+          mass-loss by 6 orders of magnitude.  This could lead to future variable
+          transit depths/shapes.
+    	  </p>
+    	</div>
+
+    </div>
+  </div>
+
+
+   <div class="container" style="padding-top:20px; width=100%; padding-bottom:80px">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#73BABA; color:#232323">
+          For more details, be sure to check out
+	         <u><a href="https://arxiv.org/abs/2205.09606" target="_blank"
+             style="color:#FFDEB1">our paper</a></u> on the arXiv!</h2>
+      </div>
+    </div>
+   </div>
+
+<!--</div>-->
+
+<div class="footer">
+  <a class="left"  href="http://adina.feinste.in/" style="color:#FFDEB1">Adina Feinstein</a>
+  <p class="right" style="color:#FFDEB1">afeinstein@uchicago.edu</p>
+  <div class="centered">
+    <a class="fa fa-twitter" href="https://twitter.com/afeinstein20" style="font-size:20px"></a>
+    <a style="color:#FFDEB1" href="https://twitter.com/afeinstein20"> @afeinstein20</a>
+  </div>
+</div>
+
+</body>
+</html>

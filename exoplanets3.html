@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="figures/favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -78,7 +79,7 @@ h1 {
   font-size: 16px;
   position: absolute;
   margin-left: 1150px;
-  margin-top: 330px; 
+  margin-top: 330px;
 }
 
 .btn:hover {background: #6C65A8;
@@ -124,14 +125,14 @@ h1 {
 <title>Adina Feinstein</title>
 
 <body style="background-color:black" style="font-color:white">
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124414737-4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    
+
     gtag('config', 'UA-124414737-4');
   </script>
 
@@ -149,7 +150,7 @@ h1 {
   <div class="container" style="padding-top:50px">
     <div class="row">
       <h1 class="centered" style="color:white">Understanding Flare Rates of Young Stars with Machine Learning</h1>
-      <h4 class="centered" style="color:#6C65A8"><a href="http://adina.feinste.in/" style="color:#06A4CA; font-size:18pt">Adina Feinstein</a>, 
+      <h4 class="centered" style="color:#6C65A8"><a href="http://adina.feinste.in/" style="color:#06A4CA; font-size:18pt">Adina Feinstein</a>,
 	Ben Montet, Megan Ansdell, Brian Nord, Jacob Bean, Max Gunther, Michael Gully-Santiago, & Josh Schlieder</h4>
       <div class="col-lg-12" style="text-align:center">
 	<h4>
@@ -167,7 +168,7 @@ h1 {
         <h2 class="centered" style="background-color:#6C65A8"> TL;DR </h2>
 	<h3>M dwarfs have consistently high flare rates across the first 800 Myr, while hotter stars have fewer flares over time.</h3>
 	<h3>M dwarfs with T<sub>eff</sub> < 3200 K have the highest normalized energy flares in the sample.</h3>
-        <h3>High flare rates seen on young stars cause exoplanet atmospheres too lose 4-7% more atmospheric mass.</h3>					   
+        <h3>High flare rates seen on young stars cause exoplanet atmospheres too lose 4-7% more atmospheric mass.</h3>
       </div>
     </div>
   </div>
@@ -180,20 +181,20 @@ h1 {
       </div>
       <div class="col-lg-8">
 	In order to understand the exoplanet population we see today, we must understand the early stages
-	   of planet formation and evolution. 
+	   of planet formation and evolution.
 	The star a planet orbit dictates its entire life. It sets the environment the planet resides in.
 	Young stars are known to emit higher X-ray/UV radiation and be more magnetically active.
-	In particular stellar flares, which are caused by the reconnection of magnetic field lines have destructive 
+	In particular stellar flares, which are caused by the reconnection of magnetic field lines have destructive
 	consequences, such as:
 	<ul>
-	  <li>Increased photoevaporation of the inner disk 
+	  <li>Increased photoevaporation of the inner disk
 	    <a href="https://ui.adsabs.harvard.edu/abs/2010ARA%26A..48..241B/abstract" style="color:white">(Benz & Gudel, 2010)</a>.</li>
-	  <li>Increased atmospheric erosion, especially for short period planets while they are still forming and contracting 
+	  <li>Increased atmospheric erosion, especially for short period planets while they are still forming and contracting
 	    <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...847...29O/abstract" style="color:white">(Owen & Wu, 2017)</a>.</li>
-	  <li>Long term effects on the chemical compositions of atmospheres 
+	  <li>Long term effects on the chemical compositions of atmospheres
 	    <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...830...77V/abstract" style="color:white">(Venot+ 2016)</a>.</li>
 	</ul>
-	We used data from the 
+	We used data from the
 	<a href="https://www.nasa.gov/tess-transiting-exoplanet-survey-satellite/" style="color:white"><i>Transiting Exoplanet Survey Satellite</i></a>
 	(<i>TESS</i>) to detect flares and determine flare rates and
 	evaluate how these values affect the photoevaporoative atmospheric mass loss for close-in planets.
@@ -213,12 +214,12 @@ h1 {
     <div class="row">
       <div class="col-md-6" style="text-align:center; padding-top:80px">
 	<p>Young stars were identified through a literature search.
-	  The Gaia kinematics were run through 
-	  <a href="http://www.exoplanetes.umontreal.ca/banyan/" style="color:#6C65A8">BANYAN-SIGMA</a> 
+	  The Gaia kinematics were run through
+	  <a href="http://www.exoplanetes.umontreal.ca/banyan/" style="color:#6C65A8">BANYAN-SIGMA</a>
 	  to assign each star to a young moving
 	  groups, young open clusters, OB associations, or star forming region.
 	  In total, we have a sample of 3200 young stars observed at <i>TESS</i> 2-minute cadence in Sectors 1-19.
-	  
+
 	</p>
       </div>
       <div class="col-md-6">
@@ -233,12 +234,12 @@ h1 {
 	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/exoplanets3/loss_acc.png" alt="loss-acc">
       </div>
       <div class="col-md-6" style="text-align:center; padding-top:45px">
-	<p>To identify flares, we trained a convolutional neural network (CNN), 
-	  <a href="https://github.com/afeinstein20/stella" style="color:#6C65A8">stella</a> 
+	<p>To identify flares, we trained a convolutional neural network (CNN),
+	  <a href="https://github.com/afeinstein20/stella" style="color:#6C65A8">stella</a>
 	  on the flare catalog from <a href="https://ui.adsabs.harvard.edu/abs/2020AJ....159...60G/abstract" style="color:white">Gunther+2020.</a>
 	  The results of the training are shown left. Accuracy is the fraction of predictions the models got correct.
-	  The loss tests how far from the true values the network is labeling examples. 
-	  Thus, a well performing CNN will have accuracy converge to 1 and loss converge to 0, which is what we see in stella.	   
+	  The loss tests how far from the true values the network is labeling examples.
+	  Thus, a well performing CNN will have accuracy converge to 1 and loss converge to 0, which is what we see in stella.
 	</p>
       </div>
     </div>
@@ -259,12 +260,12 @@ h1 {
 	</p>
       </div>
       <div class="col-md-6">
-	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/exoplanets3/confusion.png" alt="confusion" style="max-width:60%; margin-left:100px" 
+	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/exoplanets3/confusion.png" alt="confusion" style="max-width:60%; margin-left:100px"
 	     class="centered">
       </div>
     </div>
   </div>
-  
+
   <div class="container" style="padding-top:20px">
     <div class="row">
       <div class="col-md-6">
@@ -272,7 +273,7 @@ h1 {
 	  <source src="https://github.com/afeinstein20/afeinstein20.github.io/blob/master/exoplanets3/boxslider.mp4?raw=true" type="video/mp4">
 	</video>
       </div>
-      
+
       <div class="col-md-6" style="text-align:center; margin-top:100px">
 	<p>With <a href="https://github.com/afeinstein20/stella" style="color:#6C65A8">stella</a> we are able to
 	  assign a probability that a given cadence is part of a flare.
@@ -319,15 +320,15 @@ h1 {
          <p class="centered">
 	   Here, we plot <i>Gaia</i> color against our measured rotation periods, P<sub>rot</sub>.
 	   Points are colored by the flare rate of that star.
-	   There is a noticeable decrease in flare rate at <i>Gaia</i> B<sub>p></sub> - R<sub>p></sub> = 2, 
+	   There is a noticeable decrease in flare rate at <i>Gaia</i> B<sub>p></sub> - R<sub>p></sub> = 2,
              which corresponds to a T<sub>eff</sub> = 4000 K.
-           Most stars with color B<sub>p></sub> - R<sub>p></sub> < 2 do not exhibit any flares, while the 
-             cooler stars show a variety of flare rates across all rotation periods.								    
-           There is a clear artificially induced break at P<sub>rot</sub> > 12 days, as the result of our 
+           Most stars with color B<sub>p></sub> - R<sub>p></sub> < 2 do not exhibit any flares, while the
+             cooler stars show a variety of flare rates across all rotation periods.
+           There is a clear artificially induced break at P<sub>rot</sub> > 12 days, as the result of our
              rotation period metrics.
          </p>
       </div>
-       
+
       <div class="col-md-6">
 	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/exoplanets3/flare_rate_rot.png" class="centered">
       </div>
@@ -341,14 +342,14 @@ h1 {
       <div class="col-md-6">
 	<img src="https://raw.githubusercontent.com/afeinstein20/afeinstein20.github.io/master/exoplanets3/phase.png" style="max-width:90%" class="centered">
       </div>
-      
+
       <div class="col-md-6" style="text-align:center; margin-top:120px">
-	<p>We were able to measure rotation periods for 1500 stars in our sample. 
+	<p>We were able to measure rotation periods for 1500 stars in our sample.
 	   There is no preference for where flares occur with respect to phase.
 	   Here a phase = 0 is the peak of the rotation modulation (i.e. the less spotted hemisphere).
 	   <a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.480.2153D/abstract" style="color:white">Doyle+2018</a>,
 	   <a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.489..437D/abstract" style="color:white">Doyle+2019</a>, and
-	   <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.3596D/abstract" style="color:white">Doyle+2020</a> found 
+	   <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.3596D/abstract" style="color:white">Doyle+2020</a> found
 	   similar results across smaller samples (30-200) of G and M dwarfs in both <i>K2</i> and <i>TESS</i> data.
 	</p>
 	<p>
@@ -369,7 +370,7 @@ h1 {
     <div class="row">
       <div class="col-md-6">
         <p>
-	  Modifying the photoevaporative atmospheric mass loss equation from 
+	  Modifying the photoevaporative atmospheric mass loss equation from
 	     <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...847...29O/abstract" style="color:white">Owen & Wu (2017)</a>,
 	     to account for flares, we find that:
 	  <ul>
@@ -392,12 +393,12 @@ h1 {
    <div class="container" style="padding-top:20px; width=100%; padding-bottom:80px">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="centered" style="background-color:#6C65A8">For more details, be sure to check out 
+        <h2 class="centered" style="background-color:#6C65A8">For more details, be sure to check out
 	  <u><a href="https://arxiv.org/abs/2005.07710" style="color:white">our paper</a></u>!</h2>
       </div>
     </div>
    </div>
-  
+
 <!--</div>-->
 
 <div class="footer">
@@ -411,4 +412,3 @@ h1 {
 
 </body>
 </html>
-
