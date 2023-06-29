@@ -158,7 +158,7 @@ a {
 }
 
 a:hover {
-  color: #078571;
+  color: #58817f;
   text-decoration: underline;
 }
 
@@ -6368,6 +6368,10 @@ button.bg-primary:focus {
   background-color: #6c757d !important;
 }
 
+.bg-tertiary {
+  background-color: #889a88 !important;
+}
+
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
@@ -9527,6 +9531,11 @@ button.bg-dark:focus {
 .text-primary-name {
   color: #333333 !important;
 }
+
+.text-tertiary-name {
+  color: #889a88 !important;
+}
+
 
 .text-primary {
   color: #6270B4 !important;
