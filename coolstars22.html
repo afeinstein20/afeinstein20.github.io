@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="figures/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.banner {
+  height: 100px;
+  width:100%;
+  background-color: #232323;
+}
+
+img {
+   width:100%;
+   height:auto;
+}
+
+a {
+  color: #B10F47;
+}
+
+a:hover {
+  color:#73BABA;
+}
+
+p {
+  color: #FFDEB1;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #232323;
+   color: #34234D;
+   text-align: center;
+}
+
+.left {
+  text-align:left;
+  float:left;
+  margin-left:35px;
+}
+.right {
+   float:right;
+   text-align:right;
+   margin-right:35px;
+}
+.centered {
+   text-align:center;
+   margin-left:16.5px;
+}
+
+body {
+   font-family: avenir;
+   color: #FFDEB1;
+   font-size:16px;
+   background-color:#232323;
+}
+
+.h1 {
+  color:#FFDEB1;
+  font-size:38px;
+  margin-top:20px;
+}
+
+.h3 {
+  color:#FFDEB1;
+}
+
+.container {
+  color:#232323;
+}
+
+.btn {
+  background-color: #232323;
+  color: #34234D;
+  border: none;
+  font-size: 16px;
+  border-radius:8px;
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 1150px;
+  margin-top: 330px;
+}
+
+.btn:hover {background: #232323;
+           color:#232323;
+}
+
+.default {
+  color: #34234D;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #232323;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#232323;
+}
+
+.navbar-nav > .active > a {
+  color: #FFE8BF;
+  background-color: #232323;
+}
+
+.navbar-nav > a:hover {
+  color: #FFDEB1;
+  background-color: #232323;
+}
+
+.fa-github {
+   background: #232323;
+   color: #FFDEB1;
+   font-size: 40px;
+}
+
+.fa-twitter {
+   background: #232323;
+   color: #FFDEB1;
+   font-size: 40px;
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+</style>
+</head>
+
+<!-- CITATION STYLE <a href="http://www.exoplanetes.umontreal.ca/banyan/" style="color:#6C65A8">BANYAN-SIGMA</a> -->
+
+<title>Adina Feinstein</title>
+
+<body style="background-color:#232323" style="font-color:#FFDEB1">
+
+
+
+  <nav class="navbar  navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">Home</a></li>
+      <li class="active"><a href="#flares">Young Stellar Flares</a>
+      <li class="active"><a href="#tess">TESS Observations</a>
+      <li class="active"><a href="#cycles">Stellar Cycles</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" style="padding-top:50px">
+    <div class="row">
+      <h1 class="centered" style="color:#FFDEB1">Evolution of Flare Activity in
+        GKM Stars Younger than 300 Myr over Five Years of TESS Observations
+      </h1>
+      <h4 class="centered" style="color:#FFC77B"><a href="index.html"
+        style="color:#73BABA; font-size:18pt">Adina Feinstein</a>,
+	       Darryl Seligman, Kevin France, Jonathan Gagné & Adam Kowalski
+      </h4>
+      <div class="col-lg-12" style="text-align:center">
+	<h4>
+	  <a href="https://github.com/afeinstein20/young-stellar-flares" target="_blank"
+    style="color:#FFDEB1">showyourwork! Manuscript</a>
+	</h4>
+	<a class="fa fa-github" target="_blank"
+    href="https://github.com/afeinstein20/young-stellar-flares"
+    style="padding-right:20px"></a>
+	<a class="fa fa-twitter" target="_blank"
+      href="https://twitter.com/afeinstein20"
+      style="padding-left:20px"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:20px; width=100%">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#73BABA; color:#232323"> TL;DR </h2>
+	         <h3 style="color:#FFDEB1">Takeaway 1</h3>
+           <h3 style="color:#FFDEB1">Takeaway 2</h3>
+           <h3 style="color:#FFDEB1">Takeaway 3</h3>
+           <h3 style="color:#FFDEB1">Takeaway 4</h3>
+      </div>
+    </div>
+  </div>
+
+   <div class="container" style="padding-top:20px; width=100%" id="flares">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#B10F47;
+        color:#FFDEB1">Who is AU Mic?</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:20px">
+    <div class="row">
+      <div class="col-md-6" style="text-align:center; padding-top:0px">
+      	<p>
+          intro text
+      	</p>
+      </div>
+      <div class="col-md-6" style="padding-top:10px">
+        <p class="centered" style="width:95%">
+          <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/contour_with_targets.png" alt="histograms">
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container" style="padding-top:30px; width=100%" id="tess">
+    <div class="row">
+      <div class="col-lg-12">
+	       <h2 class="centered" style="background-color:#B10F47;color:#FFDEB1">
+           The FUV Time-Series and Spectra of Flares and in Quiescence</h2>
+      </div>
+    </div>
+
+  <div class="container" style="padding-top:20px">
+      <div class="row">
+
+        <div class="col-lg-6" style="text-align:center">
+      	  <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/spectrum.png"
+          alt="lc">
+      	</div>
+
+        <div class="col-md-6" style="text-align:center; padding-top:20px">
+      	  <p>
+            The observations
+          </p>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="container" style="padding-top:20px">
+      <div class="row">
+        <div class="col-md-6" style="text-align:center; padding-top:20px">
+      	  <p>
+            The data
+          </p>
+        </div>
+
+	<div class="col-lg-6" style="text-align:center">
+	  <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/flux.png"
+    alt="lc">
+	</div>
+      </div>
+  </div>
+
+  <div class="container" style="padding-top:30px; width=100%" id="cycles">
+    <div class="row">
+      <div class="col-lg-12">
+         <h2 class="centered" style="background-color:#B10F47;color:#FFDEB1">
+           Stellar Activity Cycles</h2>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:20px">
+     <div class="row">
+
+       <div class="col-md-6" style="padding-top:10px">
+         <p class="centered" style="width:95%">
+           <img src="https://raw.githubusercontent.com/afeinstein20/presentation-figures/main/aumic-flares/dark-bkg/continuum.png" alt="continuum">
+         </p>
+       </div>
+
+       <div class="col-md-6" style="padding-top:10px">
+         <p class="centered" style="width:95%">
+           Cycles text
+         </p>
+       </div>
+     </div>
+   </div>
+  </div>
+
+
+   <div class="container" style="padding-top:20px; width=100%; padding-bottom:80px">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="centered" style="background-color:#73BABA; color:#232323">
+          For more details, be sure to check out
+	         <u><a href="https://github.com/afeinstein20/young-stellar-flares" target="_blank"
+             style="color:#FFDEB1">our paper</a></u> on GitHub!</h2>
+      </div>
+    </div>
+   </div>
+
+<!--</div>-->
+
+<div class="footer">
+  <a class="left"  href="http://adina.feinste.in/" style="color:#FFDEB1">Adina Feinstein</a>
+  <p class="right" style="color:#FFDEB1">adina.feinstein@lasp.colorado.edu</p>
+  <div class="centered">
+    <a class="fa fa-twitter" href="https://twitter.com/afeinstein20" style="font-size:20px"></a>
+    <a style="color:#FFDEB1" href="https://twitter.com/afeinstein20"> @afeinstein20</a>
+  </div>
+</div>
+
+</body>
+</html>
